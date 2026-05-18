@@ -37,7 +37,7 @@ hermes setup
 
 ```bash
 # Clone the HermitDoc repo
-git clone https://github.com/Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 
 # Copy skills to your Hermes skills directory
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/skills/

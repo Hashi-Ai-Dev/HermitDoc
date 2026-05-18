@@ -1,7 +1,7 @@
 # HermitDoc v1.0.0
 
 **Release Date:** 2026-05-18
-**Repository:** https://github.com/Hashi-Ai-Dev/hermitdoc
+**Repository:** https://github.com/Hashi-Ai-Dev/HermitDoc
 
 ---
 
@@ -35,7 +35,7 @@ HermitDoc is a comprehensive knowledge-base agent for Hermes Agent — a communi
 ### Skills Only (Recommended)
 
 ```bash
-git clone https://github.com/Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/skills/
 ```
 
@@ -44,7 +44,7 @@ Then restart: `/reset`
 ### AI-Agent Install
 
 ```
-"Install HermitDoc from https://github.com/Hashi-Ai-Dev/hermitdoc"
+"Install HermitDoc from https://github.com/Hashi-Ai-Dev/HermitDoc"
 ```
 
 ---
@@ -83,7 +83,7 @@ HermitDoc uses SemVer:
 
 ## Community
 
-- GitHub: https://github.com/Hashi-Ai-Dev/hermitdoc
+- GitHub: https://github.com/Hashi-Ai-Dev/HermitDoc
 - Hermes Docs: https://hermes-agent.nousresearch.com/docs/
 - Hermes GitHub: https://github.com/NousResearch/hermes-agent
-- Issues: https://github.com/Hashi-Ai-Dev/hermitdoc/issues
+- Issues: https://github.com/Hashi-Ai-Dev/HermitDoc/issues

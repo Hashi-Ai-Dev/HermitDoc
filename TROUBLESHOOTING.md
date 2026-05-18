@@ -134,10 +134,10 @@ print("Valid!")
 **Fix:**
 ```bash
 # Use SSH instead of HTTPS
-git clone git@github.com:Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone git@github.com:Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 
 # Or retry with timeout
-git clone --depth 1 https://github.com/Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone --depth 1 https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 ```
 
 ---
@@ -208,7 +208,7 @@ chmod 644 ~/.hermes/skills/*/SKILL.md
 ## Need More Help?
 
 - Hermes docs: https://hermes-agent.nousresearch.com/docs/
-- HermitDoc issues: https://github.com/Hashi-Ai-Dev/hermitdoc/issues
+- HermitDoc issues: https://github.com/Hashi-Ai-Dev/HermitDoc/issues
 - Nous Research Discord: https://discord.gg/nousresearch
 
 When reporting an issue, include:

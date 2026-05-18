@@ -88,8 +88,8 @@ HermitDoc organizes its knowledge across 5 areas:
 
 - Hermes docs: https://hermes-agent.nousresearch.com/docs/
 - Hermes GitHub: https://github.com/NousResearch/hermes-agent
-- HermitDoc GitHub: https://github.com/Hashi-Ai-Dev/hermitdoc
-- Issues: https://github.com/Hashi-Ai-Dev/hermitdoc/issues
+- HermitDoc GitHub: https://github.com/Hashi-Ai-Dev/HermitDoc
+- Issues: https://github.com/Hashi-Ai-Dev/HermitDoc/issues
 
 ## Common Pitfalls
 

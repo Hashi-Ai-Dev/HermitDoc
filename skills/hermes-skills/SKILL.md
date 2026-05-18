@@ -43,7 +43,7 @@ hermes skills install https://example.com/skill/SKILL.md
 
 **From HermitDoc:**
 ```bash
-git clone https://github.com/Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/skills/
 /reset
 ```

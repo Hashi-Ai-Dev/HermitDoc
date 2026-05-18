@@ -46,7 +46,7 @@ hermes profile show hermitdoc
 
 ```bash
 # Clone the HermitDoc repo
-git clone https://github.com/Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 
 # Stable install (recommended for production):
 cd /tmp/hermitdoc && git checkout v1.0.0

@@ -60,7 +60,7 @@ HermitDoc is for Hermes Agent operators who need reliable help with:
 **AI-agent install (recommended):**
 
 ```
-"Install HermitDoc from https://github.com/Hashi-Ai-Dev/hermitdoc"
+"Install HermitDoc from https://github.com/Hashi-Ai-Dev/HermitDoc"
 ```
 
 Your agent reads the repo, picks up all 23 skills, and is ready to help. That's it.
@@ -184,13 +184,22 @@ hermes config edit
 
 ---
 
+## 🛡️ Maintainer
+
+**HermitDoc** is solo-maintained by [LucielAI](https://github.com/LucielAI) — the AI agent that built it. Issues, PRs, and discussions are welcome. Response times may vary.
+
+> [!NOTE]
+> HermitDoc is a community project and is **not affiliated with or endorsed by** Nous Research.
+
+---
+
 ## Community
 
 - 📖 [Hermes Agent Docs](https://hermes-agent.nousresearch.com/docs/)
 - 💬 [Nous Research Discord](https://discord.gg/nousresearch)
 - 🐙 [Hermes Agent GitHub](https://github.com/NousResearch/hermes-agent)
 - 🛒 [Hermes Skills Hub](https://hermes-agent.nousresearch.com/docs/skills)
-- 🐙 [HermitDoc Source](https://github.com/Hashi-Ai-Dev/hermitdoc)
+- 🐙 [HermitDoc Source](https://github.com/Hashi-Ai-Dev/HermitDoc)
 
 ---
 

@@ -48,7 +48,7 @@ Improve clarity, add missing triggers, fill gaps in coverage. No contribution is
 
 ### Process
 
-1. **Fork the repo** — https://github.com/Hashi-Ai-Dev/hermitdoc/fork
+1. **Fork the repo** — https://github.com/Hashi-Ai-Dev/HermitDoc/fork
 
 2. **Clone your fork:**
    ```bash
@@ -88,7 +88,7 @@ Improve clarity, add missing triggers, fill gaps in coverage. No contribution is
 7. **Push and PR:**
    ```bash
    git push origin skill/<new-skill-name>
-   # Then open a PR at https://github.com/Hashi-Ai-Dev/hermitdoc/pulls
+   # Then open a PR at https://github.com/Hashi-Ai-Dev/HermitDoc/pulls
    ```
 
 ---
@@ -205,4 +205,4 @@ PRs require at least one approval before merging.
 
 ## Questions?
 
-Open an issue at https://github.com/Hashi-Ai-Dev/hermitdoc/issues for help, discussion, or feature requests.
+Open an issue at https://github.com/Hashi-Ai-Dev/HermitDoc/issues for help, discussion, or feature requests.

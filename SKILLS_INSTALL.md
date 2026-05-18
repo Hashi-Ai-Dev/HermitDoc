@@ -23,7 +23,7 @@ For a dedicated standalone HermitDoc agent, see [AGENT_INSTALL.md](./AGENT_INSTA
 
 ```bash
 # Clone the HermitDoc repo
-git clone https://github.com/Hashi-Ai-Dev/hermitdoc.git /tmp/hermitdoc
+git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 
 # Checkout the stable release (recommended)
 cd /tmp/hermitdoc && git checkout v1.0.0
@@ -192,4 +192,4 @@ cp -r /tmp/hermitdoc/skills/hermes-skills ~/.hermes/skills/
 **Need help?**
 - Run `hermes doctor` to diagnose issues
 - See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
-- Open an issue at https://github.com/Hashi-Ai-Dev/hermitdoc/issues
+- Open an issue at https://github.com/Hashi-Ai-Dev/HermitDoc/issues
