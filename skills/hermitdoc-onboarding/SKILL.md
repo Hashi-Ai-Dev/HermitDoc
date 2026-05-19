@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [hermitdoc, onboarding, setup, getting-started, first-run]
     related_skills: [hermes-master, hermes-install, hermes-channels]
+    hermes_version: "2026.x"
 ---
 
 # HermitDoc Onboarding

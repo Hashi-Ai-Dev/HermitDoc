@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [CLI, commands, hermes, terminal, reference, slash-commands]
     related_skills: [hermes-config, hermes-tools]
+    hermes_version: "2026.x"
 ---
 
 # Hermes CLI Reference

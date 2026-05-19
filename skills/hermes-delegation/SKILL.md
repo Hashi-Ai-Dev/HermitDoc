@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [delegation, subagent, multi-agent, parallel, spawn, toolsets]
     related_skills: [hermes-config, hermes-skills, hermes-cli, hermes-concepts]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Delegation Reference

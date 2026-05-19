@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [hooks, shell-hooks, automation, pre-hook, post-hook, triggers]
     related_skills: [hermes-security, hermes-cron, hermes-cli]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Hooks Reference

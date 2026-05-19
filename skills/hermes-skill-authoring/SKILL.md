@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [skill-authoring, SKILL.md, frontmatter, validation, contributing]
     related_skills: [hermes-skills, hermes-master]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Skill Authoring Guide

@@ -1,14 +1,16 @@
 # HermitDoc
 
-**The Hermes Agent knowledge-base agent for config audits, troubleshooting, and grounded system fixes.**
+**The Hermes Agent knowledge-base agent — config audits, troubleshooting, and grounded system fixes.**
 
-[![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-2026.x-green?style=flat-square)](https://github.com/NousResearch/hermes-agent)
-[![Skills](https://img.shields.io/badge/Skills-23-orange?style=flat-square)](#skill-tree)
-[![Reference Docs](https://img.shields.io/badge/Reference_Docs-300+-blue?style=flat-square)](#reference-docs)
-[![License](https://img.shields.io/badge/License-MIT-success?style=flat-square)](LICENSE)
+> [!TIP]
+> Every answer is grounded in real Hermes CLI output, verified config keys, and official docs. No fabricated commands, no guessing.
+
+> [!NOTE]
+> Community project — **not affiliated with or endorsed by** Nous Research.
+> Tracks Hermes Agent `2026.x` · HermitDoc `v1.0.0` · 23 skills
 
 <p align="center">
-  <img src="assets/hermitdoc-banner.png" alt="HermitDoc Banner" width="600"/>
+  <img src="assets/hermitdoc-banner.png" alt="HermitDoc Banner" width="700"/>
 </p>
 
 ---
@@ -17,27 +19,31 @@
 
 HermitDoc is a specialized Hermes Agent skill-set that knows the entire Hermes system inside and out. It handles configuration, skill authoring, multi-agent delegation, channel setup, MCP integration, voice, security, and troubleshooting — with precision, not guesswork.
 
-> [!NOTE]
-> HermitDoc is a community project. It is **not affiliated with or endorsed by** Nous Research.
+HermitDoc is built by an AI agent, for AI agents. It's not a static documentation dump — it ships as a set of loadable skills that reason over your actual config, not a wiki page.
 
 > [!TIP]
-> Every answer is grounded in the actual Hermes schema and docs. Exact commands, config patches, and reference links — always.
+> Inspired by [ClawDoc](https://github.com/Hashi-Ai-Dev/openclaw-clawdoc) — the same approach applied to Hermes Agent. Where ClawDoc is the system doctor for OpenClaw, HermitDoc is the system doctor for Hermes. They share the same philosophy (verified CLI commands, dual-mode install, manifest-based packaging) but are built for different agent platforms with no shared code.
 
 ---
 
-## Which install mode?
+## Use it
 
-HermitDoc supports two adoption paths. Pick the one that fits your setup:
+```bash
+# Skills-only install (recommended)
+git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
+cp -r /tmp/hermitdoc/skills/* ~/.hermes/skills/
+/reset
+```
 
-| | Mode 1 — Persistent Agent | Mode 2 — Skills Only |
-|---|---|---|
-| **What it does** | Creates a dedicated HermitDoc agent with its own workspace | Adds HermitDoc skills to your existing agent |
-| **Best for** | Serious ongoing maintenance, system doctor use | Quick Hermes help in an existing agent |
-| **New agent created?** | ✅ Yes | ❌ No |
-| **Separate identity?** | ✅ Yes | ❌ Your agent keeps its identity |
-| **Guide** | [AGENT_INSTALL.md](./AGENT_INSTALL.md) | [SKILLS_INSTALL.md](./SKILLS_INSTALL.md) |
+Then in chat:
+```
+@your-agent How do I configure Discord?
+@your-agent Help me set up MCP for GitHub
+@your-agent What's the hermes cron create syntax?
+@your-agent How do I create a skill?
+```
 
-Not sure which to pick? Start with **Mode 2 — Skills Only** for the lightest path. Switch to Mode 1 if you want HermitDoc to have its own persistent workspace and identity.
+HermitDoc routes to the right skill, reads the reference docs, and gives you a precise, grounded answer.
 
 ---
 
@@ -55,36 +61,35 @@ HermitDoc is for Hermes Agent operators who need reliable help with:
 
 ---
 
+## Which install mode?
+
+HermitDoc supports two adoption paths. Pick the one that fits your setup:
+
+| | Mode 1 — Persistent Agent | Mode 2 — Skills Only |
+|---|---|---|
+| **What it does** | Creates a dedicated HermitDoc agent with its own workspace | Adds HermitDoc skills to your existing agent |
+| **Best for** | Serious ongoing maintenance, system doctor use | Quick Hermes help in an existing agent |
+| **New agent created?** | ✅ Yes | ❌ No |
+| **Separate identity?** | ✅ Yes | ❌ Your agent keeps its identity |
+| **Guide** | [AGENT_INSTALL.md](./AGENT_INSTALL.md) | [SKILLS_INSTALL.md](./SKILLS_INSTALL.md) |
+
+Not sure? Start with **Mode 2 — Skills Only** for the lightest path.
+
+---
+
 ## Install
 
 **AI-agent install (recommended):**
-
 ```
 "Install HermitDoc from https://github.com/Hashi-Ai-Dev/HermitDoc"
 ```
-
-Your agent reads the repo, picks up all 23 skills, and is ready to help. That's it.
+Your agent reads the repo, picks up all 23 skills, and is ready to help.
 
 **Manual install — choose your mode:**
-
 - [AGENT_INSTALL.md](./AGENT_INSTALL.md) — Mode 1: persistent dedicated HermitDoc agent
 - [SKILLS_INSTALL.md](./SKILLS_INSTALL.md) — Mode 2: add HermitDoc skills to an existing agent
 
 **Need help getting started?** → [QUICKSTART.md](./QUICKSTART.md) (10 min)
-
----
-
-## Use it
-
-```
-@your-agent [any Hermes config question]
-```
-
-HermitDoc routes to the right skill, reads the reference docs, and gives you a precise, grounded answer.
-
----
-
-## Reference docs
 
 **300+ docs** covering the full Hermes Agent system, versioned against the tracked Hermes release.
 
@@ -190,6 +195,29 @@ hermes config edit
 
 > [!NOTE]
 > HermitDoc is a community project and is **not affiliated with or endorsed by** Nous Research.
+
+---
+
+## Version & Sync Status
+
+| | |
+|---|---|
+| **HermitDoc version** | `v1.0.0` |
+| **Hermes Agent tracked** | `2026.x` |
+| **Last synced** | 2026-05-18 |
+| **Skills** | 23 |
+| **Release** | [GitHub Releases](https://github.com/Hashi-Ai-Dev/HermitDoc/releases) |
+
+> [!IMPORTANT]
+> When Hermes Agent releases a new version, HermitDoc maintainer will audit all skills and issue a patch/minor release to stay in sync. Check the [Changelog](./CHANGELOG.md) before upgrading Hermes.
+
+---
+
+## Related Projects
+
+**[ClawDoc](https://github.com/Hashi-Ai-Dev/openclaw-clawdoc)** — The direct inspiration for HermitDoc. ClawDoc is the system doctor for [OpenClaw](https://github.com/openclaw-team/openclaw), applying the same philosophy (verified CLI commands, dual-mode install, manifest-based packaging) to OpenClaw config and operation questions. No shared code — same approach, different platform.
+
+If you run both OpenClaw and Hermes Agent, install both: they complement each other.
 
 ---
 

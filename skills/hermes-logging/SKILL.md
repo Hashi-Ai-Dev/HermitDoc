@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [logging, logs, diagnostics, error-tracking]
     related_skills: [hermes-troubleshooting, hermes-cli, hermes-config]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Logging Reference

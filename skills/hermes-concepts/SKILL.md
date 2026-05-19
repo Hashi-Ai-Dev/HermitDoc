@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [concepts, architecture, session, context, bootstrap, compression, lifecycle]
     related_skills: [hermes-master, hermes-config, hermes-soul]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Concepts Reference

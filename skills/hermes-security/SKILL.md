@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [security, approvals, YOLO, secrets, redaction, sandbox, permissions, auth]
     related_skills: [hermes-config, hermes-troubleshooting, hermes-cli]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Security Reference

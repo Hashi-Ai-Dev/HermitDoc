@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [MCP, model-context-protocol, mcp-server, stdio, http, integration]
     related_skills: [hermes-config, hermes-tools, hermes-cli]
+    hermes_version: "2026.x"
 ---
 
 # Hermes MCP Reference

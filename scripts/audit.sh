@@ -46,6 +46,12 @@ for skill in skills/*/SKILL.md; do
     echo "❌ $skill: description > 1024 chars ($desc_len)"
     ERRORS=$((ERRORS+1))
   fi
+
+  # Must have hermes_version in metadata
+  if ! [[ "$content" =~ hermes_version: ]]; then
+    echo "❌ $skill: missing hermes_version in metadata"
+    ERRORS=$((ERRORS+1))
+  fi
   
   # File size ≤ 100000
   size=$(wc -c < "$skill")

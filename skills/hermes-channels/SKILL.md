@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [channels, discord, telegram, slack, whatsapp, messaging, bot]
     related_skills: [hermes-gateway, hermes-config, hermes-install]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Channels Reference

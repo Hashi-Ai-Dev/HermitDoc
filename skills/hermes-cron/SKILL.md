@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [cron, scheduling, automation, recurring-tasks, cronjobs, background-tasks]
     related_skills: [hermes-cli, hermes-delegation, hermes-gateway, hermes-security]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Cron Reference

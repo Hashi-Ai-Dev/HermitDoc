@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [tools, toolset, terminal, file, web, browser, vision, skills, memory]
     related_skills: [hermes-config, hermes-cli]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Tools Reference

@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [voice, TTS, STT, speech, transcription, audio]
     related_skills: [hermes-config, hermes-cli]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Voice Reference

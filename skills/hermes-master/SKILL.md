@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [hermes, master, routing, overview, concepts, architecture]
     related_skills: [hermes-config, hermes-skills, hermes-delegation, hermes-concepts, hermes-troubleshooting]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Master Reference

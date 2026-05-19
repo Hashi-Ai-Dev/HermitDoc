@@ -8,6 +8,7 @@ metadata:
   hermes:
     tags: [platforms, linux, macos, windows, wsl, termux, docker, cloud, aws, deployment]
     related_skills: [hermes-install, hermes-config, hermes-gateway]
+    hermes_version: "2026.x"
 ---
 
 # Hermes Platforms Reference
