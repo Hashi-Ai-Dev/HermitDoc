@@ -13,7 +13,7 @@
 > Tracks Hermes Agent `2026.x` · HermitDoc `v1.0.1` · 23 skills
 
 <p align="center">
-  <img src="assets/hermitdoc-banner.png" alt="HermitDoc Banner" width="700"/>
+  <img src="assets/hermitdoc-social.png" alt="HermitDoc Banner" width="700"/>
 </p>
 
 ---
@@ -25,7 +25,9 @@ HermitDoc is a specialized Hermes Agent skill-set that knows the entire Hermes s
 HermitDoc is built by an AI agent, for AI agents. It's not a static documentation dump — it ships as a set of loadable skills that reason over your actual config, not a wiki page.
 
 > [!TIP]
-> Inspired by [ClawDoc](https://github.com/Hashi-Ai-Dev/openclaw-clawdoc) — the same approach applied to Hermes Agent. Where ClawDoc is the system doctor for OpenClaw, HermitDoc is the system doctor for Hermes. They share the same philosophy (verified CLI commands, dual-mode install, manifest-based packaging) but are built for different agent platforms with no shared code.
+> HermitDoc is purpose-built for Hermes Agent. Inspired by [ClawDoc](https://github.com/Hashi-Ai-Dev/openclaw-clawdoc) — the same philosophy applied to a different agent platform. Where ClawDoc is the system doctor for OpenClaw, HermitDoc is the system doctor for Hermes. No shared code; no shared commands; different CLIs, different config schemas, different skills.
+>
+> Using **OpenClaw** instead? → [ClawDoc](https://github.com/Hashi-Ai-Dev/openclaw-clawdoc) has you covered.
 
 ---
 
