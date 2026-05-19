@@ -94,7 +94,7 @@ Your agent reads the repo, picks up all 23 skills, and is ready to help.
 
 **Need help getting started?** → [QUICKSTART.md](./QUICKSTART.md) (10 min)
 
-**300+ docs** covering the full Hermes Agent system, versioned against the tracked Hermes release.
+**230+ reference sections** across 23 skills covering the full Hermes Agent system, versioned against the tracked Hermes release.
 
 | Area | What's covered |
 |------|---------------|
