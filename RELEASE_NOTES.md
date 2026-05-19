@@ -1,32 +1,34 @@
-# HermitDoc v1.0.0
+# HermitDoc v1.0.1
 
-**Release Date:** 2026-05-18
+**Release Date:** 2026-05-19
 **Repository:** https://github.com/Hashi-Ai-Dev/HermitDoc
 
 ---
 
 ## What's New
 
-HermitDoc is a comprehensive knowledge-base agent for Hermes Agent — a community project (not affiliated with Nous Research) that provides verified, grounded answers for all Hermes configuration and operation questions.
+**HermitDoc `v1.0.1`** — patch release with version hygiene, repo audit fixes, and public-ready setup.
 
-### 23 Skills
+> **Tracks Hermes Agent:** `2026.x`
+> **Skills:** 23
 
-| Category | Skills |
-|----------|--------|
-| **Core** | hermes-master, hermes-config, hermes-skills, hermes-delegation, hermes-memory |
-| **Operations** | hermes-cron, hermes-troubleshooting, hermes-logging, hermes-security, hermes-hooks |
-| **Channels** | hermes-channels, hermes-gateway, hermes-mcp, hermes-platforms, hermes-install |
-| **Tools** | hermes-voice, hermes-providers, hermes-tools, hermes-cli |
-| **Concepts** | hermes-soul, hermes-concepts, hermes-skill-authoring, hermitdoc-onboarding |
+### Key Changes
 
-### Key Features
+- **Every skill carries `hermes_version`** in frontmatter metadata — each skill is tagged to the Hermes release it was verified against
+- **`scripts/audit.sh`** now enforces `hermes_version` presence in all skills
+- README reorganized: banner above fold, version/sync table, ClawDoc cross-reference
+- MIT license + Hermes Agent `2026.x` badges added to README
+- QUICKSTART now shows version + Hermes tracked version at a glance
 
-- **All CLI commands verified** against actual Hermes CLI
-- **All config keys verified** against real config.yaml
-- **Dual-mode install**: persistent agent (profile) or skills-only
-- **Ready-to-use examples**: Discord, Telegram, OpenRouter, cron, voice, MCP, and more
-- **Pre-release audit script** validates all 23 skills
-- **Machine-readable manifest** (HERMITDOC_MANIFEST.json)
+### Fixes
+
+- `HERMITDOC_MANIFEST.json` skill count corrected: `22` → `23`
+- SECURITY.md scope section added
+- CONTRIBUTING.md PR process now references `scripts/audit.sh` explicitly
+
+### Security
+
+- **`.github/CODEOWNERS`** added — all merges to `main` require maintainer approval, blocking prompt injection via malicious external PRs
 
 ---
 
@@ -39,7 +41,7 @@ git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/skills/
 ```
 
-Then restart: `/reset`
+Then: `/reset`
 
 ### AI-Agent Install
 

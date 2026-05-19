@@ -5,6 +5,26 @@ All notable changes to HermitDoc are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-05-19
+
+### Changed
+
+- Every skill now carries `hermes_version` in frontmatter metadata (`metadata.hermes.hermes_version: "2026.x"`)
+- README reorganized: banner above fold, version/sync table, ClawDoc cross-reference
+- README badges: MIT license + Hermes Agent `2026.x` version
+- QUICKSTART header now shows version + Hermes tracked version
+- `scripts/audit.sh` now enforces `hermes_version` presence in all skills
+- CONTRIBUTING.md PR process now explicitly references `bash scripts/audit.sh`
+
+### Fixed
+
+- `HERMITDOC_MANIFEST.json` skill count: `22` → `23`
+- SECURITY.md scope section added — defines what this policy covers vs. what belongs to Nous Research
+
+### Security
+
+- **`.github/CODEOWNERS`** added — all merges to `main` require maintainer approval, blocking prompt injection via malicious external PRs
+
 ## [1.0.0] - 2026-05-18
 
 ### Added
