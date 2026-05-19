@@ -2,7 +2,7 @@
 
 Get HermitDoc running and answering Hermes questions in under 10 minutes.
 
-> **Version:** `v1.0.0` · **Tracks Hermes:** `2026.x` · **Skills:** 23
+> **Version:** `v1.0.1` · **Tracks Hermes:** `2026.x` · **Skills:** 23
 
 ---
 

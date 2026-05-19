@@ -49,7 +49,7 @@ hermes profile show hermitdoc
 git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 
 # Stable install (recommended for production):
-cd /tmp/hermitdoc && git checkout v1.0.0
+cd /tmp/hermitdoc && git checkout v1.0.1
 
 # Copy skills into the profile's skills directory
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/profiles/hermitdoc/skills/
@@ -145,7 +145,7 @@ Once running, address the HermitDoc profile in your configured channels:
 
 ```bash
 cd /tmp/hermitdoc && git fetch --tags
-git checkout v1.0.0
+git checkout v1.0.1
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/profiles/hermitdoc/skills/
 # If SOUL.md was updated:
 cp /tmp/hermitdoc/agent-template/SOUL.md ~/.hermes/profiles/hermitdoc/SOUL.md

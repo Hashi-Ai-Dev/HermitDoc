@@ -109,7 +109,7 @@
   },
   "version_tracks": {
     "description": "Two separate version tracks are maintained independently.",
-    "hermitdoc_package_version": "SemVer public package version (e.g. v1.0.0). Bumped for public install contract, new capabilities, or breaking changes.",
+    "hermitdoc_package_version": "SemVer public package version (e.g. v1.0.1). Bumped for public install contract, new capabilities, or breaking changes.",
     "tracked_hermes_version": "Upstream Hermes Agent version (e.g. 2026.x). Updated on every sync; does not drive HermitDoc SemVer."
   }
 }
