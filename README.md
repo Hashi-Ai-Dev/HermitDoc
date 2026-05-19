@@ -1,5 +1,8 @@
 # HermitDoc
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-success?style=flat-square)](LICENSE)
+[![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-2026.x-green?style=flat-square)](https://github.com/NousResearch/hermes-agent)
+
 **The Hermes Agent knowledge-base agent — config audits, troubleshooting, and grounded system fixes.**
 
 > [!TIP]

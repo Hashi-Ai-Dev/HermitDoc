@@ -196,7 +196,7 @@ chore: update tracked Hermes version to 2026.x
 1. **Fill out the PR template** — describe what, why, and how
 2. **Link related issues** — use `Fixes #123` or `Closes #456`
 3. **Keep scope focused** — one skill per PR is ideal
-4. **Self-review first** — run the validation script before requesting review
+4. **Run the audit script** — `bash scripts/audit.sh` must pass before opening a PR
 5. **Respond to feedback** — iterate until approved
 
 PRs require at least one approval before merging.

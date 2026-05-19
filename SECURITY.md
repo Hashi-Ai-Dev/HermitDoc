@@ -1,8 +1,15 @@
 # Security Policy
 
+## Scope
+
+This security policy covers the HermitDoc public repository, including all skills, scripts, reference documentation, and configuration examples. It **does not** cover:
+- Hermes Agent core (report to [Nous Research](https://github.com/NousResearch/hermes-agent/security))
+- Third-party services referenced in skills (OpenRouter, Anthropic, etc.)
+- User runtime environments, credential files, or personal configurations
+
 ## Supported Versions
 
-| Version | Supported          |
+|| Version | Supported          |
 | ------- | ------------------ |
 | v1.x    | ✅ Currently active |
 

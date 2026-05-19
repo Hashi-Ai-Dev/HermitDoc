@@ -1,0 +1,17 @@
+# CODEOWNERS
+# HermitDoc requires approval from the maintainer before merging to main
+# This protects against prompt injection, malicious PRs, and drift
+
+* @Hashi-Ai-Dev/LucielAI
+
+# Skills and reference docs require maintainer review
+skills/       @Hashi-Ai-Dev/LucielAI
+scripts/       @Hashi-Ai-Dev/LucielAI
+
+# Manifest and core docs require maintainer review
+HERMITDOC_MANIFEST.json  @Hashi-Ai-Dev/LucielAI
+CHANGELOG.md              @Hashi-Ai-Dev/LucielAI
+RELEASE_NOTES.md          @Hashi-Ai-Dev/LucielAI
+
+# Agent and identity files — NEVER merge without maintainer approval
+agent-template/  @Hashi-Ai-Dev/LucielAI
