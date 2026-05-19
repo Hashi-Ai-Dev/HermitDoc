@@ -26,7 +26,7 @@ For a dedicated standalone HermitDoc agent, see [AGENT_INSTALL.md](./AGENT_INSTA
 git clone https://github.com/Hashi-Ai-Dev/HermitDoc.git /tmp/hermitdoc
 
 # Checkout the stable release (recommended)
-cd /tmp/hermitdoc && git checkout v1.0.0
+cd /tmp/hermitdoc && git checkout v1.0.1
 ```
 
 ---
@@ -117,7 +117,7 @@ HermitDoc skills are organized under `~/.hermes/skills/`:
 cd /tmp/hermitdoc && git pull
 
 # Or switch to a specific release:
-cd /tmp/hermitdoc && git checkout v1.0.0  # or v1.0.1, etc.
+cd /tmp/hermitdoc && git checkout v1.0.1  # or v1.0.1, etc.
 
 # Re-copy skills
 cp -r /tmp/hermitdoc/skills/* ~/.hermes/skills/
