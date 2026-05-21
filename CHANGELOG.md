@@ -5,6 +5,43 @@ All notable changes to HermitDoc are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2026-05-21
+
+### Changed
+
+- **Hermes sync** — tracked Hermes version updated from `2026.x` → `v2026.5.16` (v0.14.0 — "The Foundation Release")
+- README badge and version note updated to reflect `v2026.5.16`
+
+### Hermes v0.14.0 Highlights (synced from upstream)
+
+- **xAI Grok via SuperGrok OAuth** — grok-4.3 bumped to 1M context window; no API key needed
+- **OpenAI-compatible local proxy** — Codex / Aider / Cline hit Claude Pro, ChatGPT Pro, SuperGrok via `hermes proxy`
+- **`x_search`** — first-class X (Twitter) search tool with OAuth-or-API-key auth
+- **Microsoft Teams** — end-to-end: Graph auth, webhook listener, pipeline runtime, outbound delivery
+- **Debloating wave** — heavy backends lazy-install on first use; `pip install hermes-agent` ships a leaner bundle
+- **pip install hermes-agent** — real PyPI package; `hermes` works out of the box
+- **Cross-session 1h Claude prompt cache** — warm cache across sessions for faster first-turn responses
+- **180x faster browser CDP** — persistent DevTools session instead of per-call spin-up
+- **~19s cold-start off `hermes` launch** — deferred imports, disk-first catalog, parallel doctor checks
+- **LINE + SimpleX Chat** — 2 new messaging platforms (22 total)
+- **`/handoff`** — live session transfer between models/personas without losing context
+- **Native clarify buttons** on Telegram and Discord
+- **Discord channel history backfill** (default on)
+- **`vision_analyze` returns raw pixels** to vision-capable models
+- **Per-turn file-mutation verifier footer** — catches write failures before next turn
+- **LSP semantic diagnostics** on every `write_file`/`patch` edit
+- **Unified `video_generate`** with pluggable provider backends
+- **`computer_use` cua-driver** — works with non-Anthropic providers
+- **Clickable OSC8 hyperlinks** in any supporting terminal
+- **Zed ACP Registry** integration via `uvx`
+- **OpenRouter Pareto Code router** with `min_coding_score` knob
+- **NovitaAI** as new model provider
+- **9 new optional skills** — Hyperliquid, Yahoo Finance, api-testing, EVM multi-chain, darwinian-evolver, osint-investigation, pinggy-tunnel, watchers, Notion overhaul
+- **Brave Search + DuckDuckGo** free web-search backends
+- **Security hardening** — sudo brute-force block, dangerous-command bypass closures, tool-error sanitization
+- **Native Windows beta** — PowerShell installer, no WSL required
+- **Provider rename** — Alibaba Cloud → Qwen Cloud
+
 ## [1.0.1] - 2026-05-19
 
 ### Changed
