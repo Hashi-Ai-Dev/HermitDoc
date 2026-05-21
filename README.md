@@ -10,7 +10,7 @@
 
 > [!NOTE]
 > Community project — **not affiliated with or endorsed by** Nous Research.
-> Tracks Hermes Agent `v2026.5.16` · HermitDoc `v1.0.2` · 23 skills
+> Tracks Hermes Agent `v2026.5.16` · HermitDoc `v1.0.3` · 23 skills
 
 <p align="center">
   <img src="assets/hermitdoc-social.png" alt="HermitDoc Banner" width="700"/>
