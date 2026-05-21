@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [SOUL.md, personality, persona, tone, voice, character, default-voice]
     related_skills: [hermes-concepts, hermes-config, hermes-master]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes SOUL.md Reference
