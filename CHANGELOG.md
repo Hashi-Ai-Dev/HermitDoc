@@ -7,40 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [1.0.3] - 2026-05-21
 
-### Infrastructure — Release Pipeline Upgrade
-
-This release ships the upgraded `hermitdoc-update` skill with a full multi-phase audit pipeline, matching ClawDoc's operational standards:
-
-| Phase | Step | Status |
-|-------|------|--------|
-| 0 | Pre-flight (Hermes availability) | ✅ Hermes v0.12.0 detected (v0.14.0 available via update) |
-| 1 | CLI Verification | ✅ 9 commands verified against `--help` output |
-| 2 | Config Key Verification | ✅ `hermes config show` output reviewed |
-| 3 | Safety Scan | ✅ No forbidden content, no leaked secrets, no placeholder text |
-| 4 | Bloat Detection | ⚠️ `hermes-cli/SKILL.md` at 356 lines (>250 warning threshold; not a blocker) |
-| 5 | OSS Reviewer | ✅ All skill names match directories; no orphaned refs |
-| 6 | Content Review | ✅ All skills reviewed |
-| 7 | Release Gate | ✅ 7/7 automated checks |
-
 ### Changed
 
-- **`hermitdoc-update` skill upgraded** — added 5 new audit phases: CLI verification, safety scan, bloat detection, OSS reviewer, and automated Release Gate
-- Public release body format standardized to ClawDoc-style structured layout
-- Branch protection bypass workflow documented (requires PR → squash merge, API toggle of `required_approving_review_count`)
-- `require_code_owner_reviews` toggle limitation noted — must be toggled manually in repo Settings
+- Tracked Hermes version updated from `2026.x` → `v2026.5.16`
+- README badge and version note updated to reflect `v2026.5.16`
+
+### Hermes v0.14.0 Highlights (synced from upstream)
+
+- xAI Grok via SuperGrok OAuth — grok-4.3 bumped to 1M context window
+- OpenAI-compatible local proxy via `hermes proxy`
+- `x_search` — first-class X (Twitter) search tool
+- Microsoft Teams — end-to-end: Graph auth, webhook listener, outbound delivery
+- `pip install hermes-agent` — real PyPI package
+- ~19s cold-start reduction on `hermes` launch
+- LINE + SimpleX Chat — 2 new messaging platforms (22 total)
+- `/handoff` — live session transfer between models/personas
+- Native clarify buttons on Telegram and Discord
+- 9 new optional skills (Hyperliquid, Yahoo Finance, osint-investigation, and more)
+- Native Windows beta support
 
 ### Findings
 
-**New:**
-- `hermes-cli/SKILL.md` — 356 lines, exceeds 250-line bloat threshold (not a blocker; known from prior reviews)
-
 **Known from prior:**
-- `hermes-memory/SKILL.md` — known bloat from prior reviews
-- `hermes-troubleshooting/SKILL.md` — known bloat from prior reviews
-
-### Hermes Compatibility
-
-HermitDoc tracks Hermes Agent `v2026.5.16` (v0.14.0 "The Foundation Release"). Installed Hermes version is `v0.12.0` — recommend running `hermes update` to sync.
+- `hermes-memory/SKILL.md` — bloat (>250 lines)
+- `hermes-troubleshooting/SKILL.md` — bloat (>250 lines)
+- `hermes-cli/SKILL.md` — bloat (>250 lines, not a blocker)
 
 ## [1.0.2] - 2026-05-21
 
