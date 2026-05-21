@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [channels, discord, telegram, slack, whatsapp, messaging, bot]
     related_skills: [hermes-gateway, hermes-config, hermes-install]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Channels Reference
@@ -17,7 +17,7 @@ Guide to configuring messaging channels in Hermes. All channels are configured v
 
 ## Supported Channels
 
-Discord, Telegram, Slack, WhatsApp, Signal, and more. Run `hermes gateway setup` for the interactive wizard.
+Discord, Telegram, Slack, WhatsApp, Signal, LINE, SimpleX Chat, and more. Run `hermes gateway setup` for the interactive wizard.
 
 ## Discord Setup
 

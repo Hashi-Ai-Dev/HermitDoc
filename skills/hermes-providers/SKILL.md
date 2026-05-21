@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [providers, models, API-keys, openrouter, anthropic, deepseek]
     related_skills: [hermes-config, hermes-cli]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Providers Reference

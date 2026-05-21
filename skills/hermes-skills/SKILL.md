@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [skills, skill-management, skill-hub, installation, sources]
     related_skills: [hermes-skill-authoring, hermes-cli]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Skills Reference

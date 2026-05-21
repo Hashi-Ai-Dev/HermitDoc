@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [memory, session-search, providers, honcho, mem0, built-in, persistent]
     related_skills: [hermes-config, hermes-cli, hermes-concepts]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Memory Reference

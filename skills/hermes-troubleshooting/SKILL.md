@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [troubleshooting, debugging, doctor, diagnosis, error-codes, fix]
     related_skills: [hermes-cli, hermes-config, hermes-logging, hermes-master]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Troubleshooting Reference

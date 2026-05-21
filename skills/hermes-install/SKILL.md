@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [install, setup, deployment, docker, linux, macos, windows, wsl, termux]
     related_skills: [hermes-platforms, hermes-cli, hermes-config]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Install Reference

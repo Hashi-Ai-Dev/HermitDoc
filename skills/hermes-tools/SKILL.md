@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [tools, toolset, terminal, file, web, browser, vision, skills, memory]
     related_skills: [hermes-config, hermes-cli]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Tools Reference
@@ -191,12 +191,21 @@ hermes tools
 # List all tools
 hermes tools list
 
+# List tools for a specific platform (cli, telegram, discord, etc.)
+hermes tools list --platform telegram
+
 # Enable a toolset
 hermes tools enable web
+
+# Enable a toolset for a specific platform
+hermes tools enable messaging --platform discord
 
 # Disable a toolset
 hermes tools disable browser
 
+# Disable a specific MCP tool
+hermes tools disable github:create_issue --platform telegram
+```
 # Tool changes require session restart to take effect
 ```
 
