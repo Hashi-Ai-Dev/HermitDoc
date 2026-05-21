@@ -28,11 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Findings
 
-**Known from prior:**
-- `hermes-memory/SKILL.md` — bloat (>250 lines)
-- `hermes-troubleshooting/SKILL.md` — bloat (>250 lines)
-- `hermes-cli/SKILL.md` — bloat (>250 lines, not a blocker)
-
 ## [1.0.2] - 2026-05-21
 
 ### Changed
