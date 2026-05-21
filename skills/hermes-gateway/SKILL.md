@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [gateway, platform, home-channel, pairing, broadcast, messaging]
     related_skills: [hermes-channels, hermes-cli, hermes-config]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Gateway Reference

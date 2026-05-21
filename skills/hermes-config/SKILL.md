@@ -8,7 +8,7 @@ metadata:
   hermes:
     tags: [config, config.yaml, environment, credentials, profiles]
     related_skills: [hermes-cli, hermes-providers, hermes-security]
-    hermes_version: "2026.x"
+    hermes_version: "v2026.5.16"
 ---
 
 # Hermes Config Reference
