@@ -1,7 +1,7 @@
 # HermitDoc
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-success?style=flat-square)](LICENSE)
-[![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-2026.x-green?style=flat-square)](https://github.com/NousResearch/hermes-agent)
+[![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-v2026.5.16-green?style=flat-square)](https://github.com/NousResearch/hermes-agent)
 
 **The Hermes Agent knowledge-base agent — config audits, troubleshooting, and grounded system fixes.**
 
@@ -10,7 +10,7 @@
 
 > [!NOTE]
 > Community project — **not affiliated with or endorsed by** Nous Research.
-> Tracks Hermes Agent `2026.x` · HermitDoc `v1.0.1` · 23 skills
+> Tracks Hermes Agent `v2026.5.16` · HermitDoc `v1.0.2` · 23 skills
 
 <p align="center">
   <img src="assets/hermitdoc-social.png" alt="HermitDoc Banner" width="700"/>
