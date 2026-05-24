@@ -5,7 +5,29 @@ All notable changes to HermitDoc are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [1.0.3] - 2026-05-21
+## ## [1.0.4] - 2026-05-21
+
+### Changed
+
+- All 23 skills: `hermes_version` frontmatter bumped to `v2026.5.16`
+- `hermes-channels`: LINE and SimpleX Chat added to supported platforms
+- `hermes-tools`: `--platform` flag documented for `tools list/disable/enable`
+- HERMITDOC_MANIFEST.json `hermitdoc_version` updated to `v1.0.4`
+
+### Hermes v0.14.0 highlights (synced from upstream)
+
+- xAI Grok via SuperGrok OAuth — grok-4.3 with 1M context window
+- OpenAI-compatible local proxy via `hermes proxy`
+- `x_search` tool — first-class X (Twitter) search
+- Microsoft Teams — end-to-end integration
+- `pip install hermes-agent` — real PyPI package
+- ~19s cold-start reduction on `hermes` launch
+- LINE + SimpleX Chat — 22 platforms total
+- `/handoff` — live session transfer between models
+
+---
+
+[1.0.3] - 2026-05-21
 
 ### Changed
 

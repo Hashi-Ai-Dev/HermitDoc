@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "schema_version": "1.0",
-  "hermitdoc_version": "v1.0.3",
+  "hermitdoc_version": "v1.0.4",
   "tracked_hermes_version": "v2026.5.16",
   "description": "Machine-readable manifest of the HermitDoc public repository contents. HermitDoc is a dual-mode Hermes Agent system doctor distribution supporting two install modes: Mode 1 (persistent dedicated agent) and Mode 2 (skills-only into an existing agent).",
   "install_modes_supported": [
@@ -90,7 +90,7 @@
       ".agents/",
       ".hermes/"
     ],
-    "note": "Root-level SOUL.md is allowed only if it is the public HermitDoc persona (content matches origin/master tracking). USER.md, IDENTITY.md, TOOLS.md, and AGENTS.md at repo root are blocked by default — new public identity/user/tool templates should live under agent-template/, not repo root. The same filenames inside private directories (memory/, .agents/, .hermes/) are private runtime and are forbidden."
+    "note": "Root-level SOUL.md is allowed only if it is the public HermitDoc persona (content matches origin/master tracking). USER.md, IDENTITY.md, TOOLS.md, and AGENTS.md at repo root are blocked by default \u2014 new public identity/user/tool templates should live under agent-template/, not repo root. The same filenames inside private directories (memory/, .agents/, .hermes/) are private runtime and are forbidden."
   },
   "validation_rules": {
     "skill_frontmatter": {
