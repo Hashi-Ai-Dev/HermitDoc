@@ -1,17 +1,4 @@
----
-name: hermes-tools
-description: "Use when looking up available tools, tool reference, or enabling/disabling tools. Covers: terminal, file, web, browser, code_execution, vision, image_gen, tts, skills, memory, session_search, delegation, cronjob, messaging, search, todo, homeassistant. Toolsets, tool configuration. Triggers on: tools, toolset, enable tool, disable tool, terminal, file, web, browser."
-version: 1.0.0
-author: Hashi-Ai-Dev
-license: MIT
-metadata:
-  hermes:
-    tags: [tools, toolset, terminal, file, web, browser, vision, skills, memory]
-    related_skills: [hermes-config, hermes-cli]
-    hermes_version: "v2026.5.16"
----
-
-# Hermes Tools Reference
+# Tool Reference
 
 Complete reference for all available tools in Hermes.
 
@@ -41,7 +28,7 @@ Complete reference for all available tools in Hermes.
 | `rl` | Reinforcement learning tools |
 | `moa` | Mixture of Agents |
 
-## Tool Reference
+## Individual Tool Details
 
 ### terminal
 
@@ -155,92 +142,3 @@ Task planning:
 ```bash
 todo(todos=[{"id": "1", "content": "...", "status": "in_progress"}])
 ```
-
-## Toolsets
-
-Group tools for enable/disable:
-
-| Toolset | Contains |
-|---------|----------|
-| `terminal` | Shell commands |
-| `file` | File operations |
-| `web` | Web search + extraction |
-| `browser` | CDP browser automation |
-| `vision` | Image analysis |
-| `image_gen` | AI image generation |
-| `tts` | Text-to-speech |
-| `skills` | Skill management |
-| `memory` | Persistent memory |
-| `session_search` | Conversation search |
-| `delegation` | Subagent spawning |
-| `cronjob` | Scheduling |
-| `clarify` | User questions |
-| `messaging` | Cross-platform send |
-| `search` | Web search |
-| `todo` | Task planning |
-| `homeassistant` | Smart home |
-| `rl` | RL tools |
-| `moa` | Mixture of Agents |
-
-## Tool Management CLI
-
-```bash
-# Interactive tool manager
-hermes tools
-
-# List all tools
-hermes tools list
-
-# List tools for a specific platform (cli, telegram, discord, etc.)
-hermes tools list --platform telegram
-
-# Enable a toolset
-hermes tools enable web
-
-# Enable a toolset for a specific platform
-hermes tools enable messaging --platform discord
-
-# Disable a toolset
-hermes tools disable browser
-
-# Disable a specific MCP tool
-hermes tools disable github:create_issue --platform telegram
-```
-# Tool changes require session restart to take effect
-```
-
-## Tool Configuration
-
-```yaml
-# config.yaml
-tools:
-  profile: "coding"  # minimal, coding, messaging, full
-  # Or individual:
-  enabled:
-    - terminal
-    - file
-    - web
-```
-
-### Tool Profiles
-
-| Profile | Tools included |
-|---------|---------------|
-| `minimal` | session_status only |
-| `coding` | terminal, file, web, browser, code_execution, vision, image_gen, skills, memory, session_search, delegation, cronjob |
-| `messaging` | messaging tools, session_search |
-| `full` | Everything |
-
-## References
-
-Structured reference docs:
-
-- [Tool Reference](references/tool-reference.md) — Individual tool details
-- [Toolsets](references/toolsets.md) — Tool groupings and profiles
-- [Config Reference](references/config-reference.md) — Tool configuration schema
-
-Related skills:
-
-- `hermes-config/` — tool config keys
-- `hermes-cli/` — tool CLI commands
-- `hermes-delegation/` — delegation tools

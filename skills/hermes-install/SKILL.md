@@ -225,6 +225,14 @@ hermes doctor             # Verify
 
 ## References
 
+Structured reference docs:
+
+- [Install Methods](references/install-methods.md) — All platform installations
+- [Docker Reference](references/docker-reference.md) — Container deployment
+- [Prerequisites](references/prerequisites.md) — Required software
+
+Related skills:
+
 - `hermes-platforms/` — platform-specific details
 - `hermes-config/` — initial configuration
 - `hermes-channels/` — messaging platform setup

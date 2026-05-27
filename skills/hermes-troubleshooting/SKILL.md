@@ -204,6 +204,14 @@ hermes logs --since 30m -f   # Follow last 30 minutes
 
 ## References
 
+Structured reference docs:
+
+- [Diagnostic Flow](references/diagnostic-flow.md) — Step-by-step diagnosis
+- [Common Fixes](references/common-fixes.md) — Issue solutions
+- [Logs Reference](references/logs-reference.md) — Log commands and filtering
+
+Related skills:
+
 - `hermes-cli/` — CLI commands
 - `hermes-config/` — config reference
 - `hermes-logging/` — log management

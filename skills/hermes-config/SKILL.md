@@ -205,6 +205,14 @@ Set in `~/.hermes/.env`:
 
 ## References
 
+Structured reference docs:
+
+- [Config Keys](references/config-keys.md) — All config.yaml keys
+- [Container Config](references/container-config.md) — Docker settings
+- [Environment Vars](references/environment-vars.md) — API keys and env
+
+Related skills:
+
 - `hermes-cli/` — config CLI commands
 - `hermes-providers/` — model providers
 - `hermes-security/` — security config</parameter>
