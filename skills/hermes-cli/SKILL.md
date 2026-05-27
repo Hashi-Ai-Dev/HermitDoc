@@ -24,7 +24,7 @@ hermes [flags] [command]
   -q, -z, --prompt TEXT   Single query (non-interactive)
   -m, --model MODEL        Model override (e.g. anthropic/claude-sonnet-4)
   --provider PROVIDER       Force provider (openrouter, anthropic, etc.)
-  -t, --toolsets LIST      ComComma-separated toolsets
+  -t, --toolsets LIST      Comma-separated toolsets
   --resume, -r SESSION     Resume session by ID or title
   --continue, -c [NAME]   Resume by name or most recent
   --worktree               Isolated git worktree mode

@@ -5,7 +5,29 @@ All notable changes to HermitDoc are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## ## [1.0.4] - 2026-05-21
+## [1.1.0] - 2026-05-27
+
+### Added
+
+- **Structured reference docs** — 30 reference documents across 10 skills (`hermes-cli`, `hermes-skills`, `hermes-config`, `hermes-delegation`, `hermes-memory`, `hermes-cron`, `hermes-troubleshooting`, `hermes-logging`, `hermes-gateway`, `hermes-install`)
+- **common-pitfalls.md expanded** from 7 to 12 pitfalls — new entries cover: forbidden `triggers` frontmatter key (must be inline in description), uppercase skill names (must be lowercase hyphenated), description >1024 chars limit, UTF-8 BOM stripping method, invalid `category` values, duplicate manifest entries, and reference paths outside skills tree
+- **prerequisites.md expanded** from 19 to ~80 lines — new content: system requirements table (OS/RAM/disk/CPU), provider API keys comparison (MiniMax/OpenAI/Anthropic/Grok/OpenRouter/custom), environment pre-checks, post-install verification steps, Docker resource flags and volume mounts, network/firewall requirements, clean uninstall guide
+
+### Changed
+
+- README version badge updated: `v1.0.1` → `v1.1.0`
+- HERMITDOC_MANIFEST.json: `hermitdoc_version` `v1.0.4` → `v1.1.0`; `reference_docs` `300` → `30`
+- Brand assets regenerated: dark minimal theme, black background (#0a0a0a), platinum text (#c0c0c0), white accents — new OG banner `hermitdoc-og-v110.png` and square badge `hermitdoc-square-v110.png`
+
+### Fixed
+
+- **ComComma typo** → `Comma` in `hermes-cli/SKILL.md` global flags line
+- **CHANGELOG.md** double `## ##` prefix on `[1.0.4]` entry corrected to single `##`
+- Internal docs removed: `feature/1.1.0-audit-log.md`, `feature/1.1.0-benchmarks.md` (public repo policy)
+
+---
+
+## [1.0.4] - 2026-05-21
 
 ### Changed
 

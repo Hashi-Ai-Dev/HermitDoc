@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "schema_version": "1.0",
-  "hermitdoc_version": "v1.0.4",
+  "hermitdoc_version": "v1.1.0",
   "tracked_hermes_version": "v2026.5.16",
   "description": "Machine-readable manifest of the HermitDoc public repository contents. HermitDoc is a dual-mode Hermes Agent system doctor distribution supporting two install modes: Mode 1 (persistent dedicated agent) and Mode 2 (skills-only into an existing agent).",
   "install_modes_supported": [
@@ -10,7 +10,7 @@
   ],
   "file_counts": {
     "skills": 23,
-    "reference_docs": 300,
+    "reference_docs": 30,
     "examples": 9
   },
   "reference_docs_definition": {
