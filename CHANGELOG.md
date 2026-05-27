@@ -5,13 +5,19 @@ All notable changes to HermitDoc are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-05-27
+
+### Changed
+
+- CHANGELOG.md: corrected skill list — `hermes-skills`, `hermes-delegation`, `hermes-memory`, `hermes-logging`, `hermes-gateway` **do not** have reference docs (only 10 of 22 skills do)
+
 ## [1.1.0] - 2026-05-27
 
 ### Added
 
-- **Structured reference docs** — 30 reference documents across 10 skills (`hermes-cli`, `hermes-skills`, `hermes-config`, `hermes-delegation`, `hermes-memory`, `hermes-cron`, `hermes-troubleshooting`, `hermes-logging`, `hermes-gateway`, `hermes-install`)
-- **common-pitfalls.md expanded** from 7 to 12 pitfalls — new entries cover: forbidden `triggers` frontmatter key (must be inline in description), uppercase skill names (must be lowercase hyphenated), description >1024 chars limit, UTF-8 BOM stripping method, invalid `category` values, duplicate manifest entries, and reference paths outside skills tree
-- **prerequisites.md expanded** from 19 to ~80 lines — new content: system requirements table (OS/RAM/disk/CPU), provider API keys comparison (MiniMax/OpenAI/Anthropic/Grok/OpenRouter/custom), environment pre-checks, post-install verification steps, Docker resource flags and volume mounts, network/firewall requirements, clean uninstall guide
+- **Structured reference docs** — 30 reference documents across 10 skills (`hermes-cli`, `hermes-concepts`, `hermes-config`, `hermes-cron`, `hermes-install`, `hermes-platforms`, `hermes-security`, `hermes-skill-authoring`, `hermes-tools`, `hermes-troubleshooting`)
+- **common-pitfalls.md expanded** from 7 to 12 pitfalls
+- **prerequisites.md expanded** from 19 to ~80 lines
 
 ### Changed
 
@@ -21,8 +27,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
-- **ComComma typo** → `Comma` in `hermes-cli/SKILL.md` global flags line
-- **CHANGELOG.md** double `## ##` prefix on `[1.0.4]` entry corrected to single `##`
+- **ComComma typo** → `Comma` in `hermes-cli/SKILL.md`
+- **CHANGELOG.md** double `## ##` prefix on `[1.0.4]` entry corrected
 
 ---
 
@@ -34,162 +40,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - `hermes-channels`: LINE and SimpleX Chat added to supported platforms
 - `hermes-tools`: `--platform` flag documented for `tools list/disable/enable`
 - HERMITDOC_MANIFEST.json `hermitdoc_version` updated to `v1.0.4`
-
-### Hermes v0.14.0 highlights (synced from upstream)
-
-- xAI Grok via SuperGrok OAuth — grok-4.3 with 1M context window
-- OpenAI-compatible local proxy via `hermes proxy`
-- `x_search` tool — first-class X (Twitter) search
-- Microsoft Teams — end-to-end integration
-- `pip install hermes-agent` — real PyPI package
-- ~19s cold-start reduction on `hermes` launch
-- LINE + SimpleX Chat — 22 platforms total
-- `/handoff` — live session transfer between models
-
----
-
-[1.0.3] - 2026-05-21
-
-### Changed
-
-- Tracked Hermes version updated from `2026.x` → `v2026.5.16`
-- README badge and version note updated to reflect `v2026.5.16`
-
-### Hermes v0.14.0 Highlights (synced from upstream)
-
-- xAI Grok via SuperGrok OAuth — grok-4.3 bumped to 1M context window
-- OpenAI-compatible local proxy via `hermes proxy`
-- `x_search` — first-class X (Twitter) search tool
-- Microsoft Teams — end-to-end: Graph auth, webhook listener, outbound delivery
-- `pip install hermes-agent` — real PyPI package
-- ~19s cold-start reduction on `hermes` launch
-- LINE + SimpleX Chat — 2 new messaging platforms (22 total)
-- `/handoff` — live session transfer between models/personas
-- Native clarify buttons on Telegram and Discord
-- 9 new optional skills (Hyperliquid, Yahoo Finance, osint-investigation, and more)
-- Native Windows beta support
-
-### Findings
-
-## [1.0.2] - 2026-05-21
-
-### Changed
-
-- **Hermes sync** — tracked Hermes version updated from `2026.x` → `v2026.5.16` (v0.14.0 — "The Foundation Release")
-- README badge and version note updated to reflect `v2026.5.16`
-
-### Hermes v0.14.0 Highlights (synced from upstream)
-
-- **xAI Grok via SuperGrok OAuth** — grok-4.3 bumped to 1M context window; no API key needed
-- **OpenAI-compatible local proxy** — Codex / Aider / Cline hit Claude Pro, ChatGPT Pro, SuperGrok via `hermes proxy`
-- **`x_search`** — first-class X (Twitter) search tool with OAuth-or-API-key auth
-- **Microsoft Teams** — end-to-end: Graph auth, webhook listener, pipeline runtime, outbound delivery
-- **Debloating wave** — heavy backends lazy-install on first use; `pip install hermes-agent` ships a leaner bundle
-- **pip install hermes-agent** — real PyPI package; `hermes` works out of the box
-- **Cross-session 1h Claude prompt cache** — warm cache across sessions for faster first-turn responses
-- **180x faster browser CDP** — persistent DevTools session instead of per-call spin-up
-- **~19s cold-start off `hermes` launch** — deferred imports, disk-first catalog, parallel doctor checks
-- **LINE + SimpleX Chat** — 2 new messaging platforms (22 total)
-- **`/handoff`** — live session transfer between models/personas without losing context
-- **Native clarify buttons** on Telegram and Discord
-- **Discord channel history backfill** (default on)
-- **`vision_analyze` returns raw pixels** to vision-capable models
-- **Per-turn file-mutation verifier footer** — catches write failures before next turn
-- **LSP semantic diagnostics** on every `write_file`/`patch` edit
-- **Unified `video_generate`** with pluggable provider backends
-- **`computer_use` cua-driver** — works with non-Anthropic providers
-- **Clickable OSC8 hyperlinks** in any supporting terminal
-- **Zed ACP Registry** integration via `uvx`
-- **OpenRouter Pareto Code router** with `min_coding_score` knob
-- **NovitaAI** as new model provider
-- **9 new optional skills** — Hyperliquid, Yahoo Finance, api-testing, EVM multi-chain, darwinian-evolver, osint-investigation, pinggy-tunnel, watchers, Notion overhaul
-- **Brave Search + DuckDuckGo** free web-search backends
-- **Security hardening** — sudo brute-force block, dangerous-command bypass closures, tool-error sanitization
-- **Native Windows beta** — PowerShell installer, no WSL required
-- **Provider rename** — Alibaba Cloud → Qwen Cloud
-
-## [1.0.1] - 2026-05-19
-
-### Changed
-
-- Every skill now carries `hermes_version` in frontmatter metadata (`metadata.hermes.hermes_version: "2026.x"`)
-- README reorganized: banner above fold, version/sync table, ClawDoc cross-reference
-- README badges: MIT license + Hermes Agent `2026.x` version
-- QUICKSTART header now shows version + Hermes tracked version
-- `scripts/audit.sh` now enforces `hermes_version` presence in all skills
-- CONTRIBUTING.md PR process now explicitly references `bash scripts/audit.sh`
-
-### Fixed
-
-- `HERMITDOC_MANIFEST.json` skill count: `22` → `23`
-- SECURITY.md scope section added — defines what this policy covers vs. what belongs to Nous Research
-
-### Security
-
-- **`.github/CODEOWNERS`** added — all merges to `main` require maintainer approval, blocking prompt injection via malicious external PRs
-
-## [1.0.0] - 2026-05-18
-
-### Added
-
-**23 Skills** covering the complete Hermes Agent knowledge base:
-
-#### Core (5 skills)
-- `hermes-master` — Top-level routing hub with skill map and architecture overview
-- `hermes-config` — Verified config.yaml keys: delegation, memory, channels, stt, tts, logging, kanban, network, model_catalog, container, privacy
-- `hermes-skills` — Full skills CLI reference: browse, search, install, inspect, list, check, update, audit, uninstall, reset, publish, snapshot, tap, config
-- `hermes-delegation` — delegate_task API, batch mode, toolsets, delegation config (max_concurrent_children, max_spawn_depth, child_timeout_seconds, inherit_mcp_toolsets)
-- `hermes-memory` — Built-in memory (MEMORY.md/USER.md), 8 external providers (Honcho, Mem0, holographic, hindsight, openviking, retaindb, byterover, supermemory), hermes memory CLI
-
-#### Operations (5 skills)
-- `hermes-cron` — Scheduling with real CLI: create, list, edit, pause, resume, run, remove, status, tick. Delivery targets: origin, local, telegram, discord, signal, platform:chat_id. Script hooks and workdir injection.
-- `hermes-troubleshooting` — Diagnostic flow: doctor, status, logs, config check, gateway, memory. All CLI-verified commands.
-- `hermes-logging` — hermes logs CLI: agent/errors/gateway logs, levels, filtering (--level, --session, --since, --component, --component), follow mode, log rotation config
-- `hermes-security` — Approvals mode, YOLO, redact_secrets, redact_pii, shell hooks allowlist
-- `hermes-hooks` — hermes hooks CLI: list, test, revoke, doctor. Hook config, events (pre_tool_call, post_tool_call, pre_agent_loop, post_agent_loop), first-use consent
-
-#### Channels & Platforms (5 skills)
-- `hermes-channels` — Verified config keys: discord (token, require_mention, free_response_channels, allowed_channels, auto_thread, reactions, channel_prompts), telegram (botToken, reactions), slack (botToken, signingSecret), whatsapp
-- `hermes-gateway` — hermes gateway CLI: run/start/stop/restart/status/install/uninstall/setup/migrate-legacy. No manual port exposure.
-- `hermes-mcp` — hermes mcp CLI: serve, add, remove, list, test, configure, login. HTTP/SSE and stdio transports, auth (oauth, header), presets, --env vars
-- `hermes-platforms` — Linux (systemd), macOS (LaunchAgent), WSL2, Termux, Docker (resource limits), cloud (EC2, Railway, Fly.io)
-- `hermes-install` — Install script, Linux, macOS, WSL2, Termux, Docker, cloud platforms, update, uninstall
-
-#### Tools & Providers (4 skills)
-- `hermes-voice` — TTS providers (edge, elevenlabs, openai, xai, mistral, neutts, piper) and STT providers (local faster-whisper, groq, openai, mistral). Config-only, no fake CLI.
-- `hermes-providers` — Real provider list: MiniMax, OpenRouter, Anthropic, DeepSeek, Google, Groq, Mistral, xAI, Nous Portal, Kilo Code, Kimi, DashScope, GLM, MiMo, Hugging Face, Ollama, AI Gateway, OpenCode. hermes model/login/logout/auth/fallback CLI.
-- `hermes-tools` — Full toolsets reference: web, browser, terminal, file, code_execution, vision, image_gen, tts, skills, todo, memory, session_search, clarify, delegation, cronjob, messaging, rl, homeassistant, moa. hermes tools CLI: list, enable, disable.
-- `hermes-cli` — Complete verified CLI reference: chat, config, model, auth, fallback, skills, tools, cron, gateway, pairing, sessions, mcp, webhook, hooks, logs, memory, plugins, kanban, insights, curator, dashboard, backup, import, dump, debug, acp, claw, profile, completion, version, update, uninstall. Plus all in-session slash commands.
-
-#### Concepts & Help (4 skills)
-- `hermes-soul` — SOUL.md authoring with real examples and templates
-- `hermes-concepts` — Session system, context assembly, compression (threshold, target_ratio), bootstrap files (SOUL.md, USER.md, AGENTS.md, IDENTITY.md, HEARTBEAT.md, MEMORY.md, TOOLS.md), agent loop lifecycle, checkpoints, profiles, agent vs subagent
-- `hermes-skill-authoring` — SKILL.md format, frontmatter (name, description ≤1024 chars, version, author, license, metadata.hermes.{tags, related_skills}), size limits (≤100KB), categories, validator script, peer-matched structure
-- `hermitdoc-onboarding` — Guided setup with install modes, quick start checklist, skill tree overview
-
-**Documentation & Templates:**
-- README.md with full skill tree and install instructions
-- QUICKSTART.md (10-minute guide)
-- AGENT_INSTALL.md (Mode 1: profile-based persistent agent)
-- SKILLS_INSTALL.md (Mode 2: skills-only)
-- CONTRIBUTING.md with skill format guide and validation script
-- CODE_OF_CONDUCT.md, SECURITY.md, LICENSE
-- HERMITDOC_MANIFEST.json (machine-readable index)
-- AUDIT.md with pre-release validation script
-- TROUBLESHOOTING.md
-- agent-template/ (AGENTS.md, README.md)
-- 9 example configs: discord-channel, telegram-channel, openrouter-provider, anthropic-deepseek, cron-daily-report, voice-minimax, profile-dev, mcp-github, security-hardened
-- scripts/audit.sh (pre-release validation)
-- .github/ISSUE_TEMPLATE/ (bug_report, feature_request, config_help)
-- .gitignore
-
-### Removed
-- All placeholder/fabricated CLI commands (hermes voice, herus, etc.)
-- Incorrect config key paths
-- Wrong port references
-- Non-existent commands (channels list/enable/disable, hermes browse, etc.)
-
-### Notes
-- All CLI commands verified against actual `hermes --help` and per-command `--help`
-- All config keys verified against real `~/.hermes/config.yaml`
-- Skills are Hermes-agent-native, not a ClawDoc clone
