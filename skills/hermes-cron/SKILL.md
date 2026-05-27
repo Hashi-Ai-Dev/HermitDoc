@@ -216,6 +216,15 @@ hermes webhook subscribe my-webhook
 
 ## References
 
+Structured reference docs:
+
+- [Schedule Syntax](references/schedule-syntax.md) — Cron format reference
+- [CLI Reference](references/cli-reference.md) — Cron command reference
+- [Delivery Targets](references/delivery-targets.md) — Output destinations
+- [Cron Templates](references/cron-templates.md) — Pre-built job patterns
+
+Related skills:
+
 - `hermes-cli/` — cron CLI reference
 - `hermes-gateway/` — platform integration
 - `hermes-security/` — secure automation

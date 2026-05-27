@@ -226,6 +226,14 @@ Within the body, reference other skills by name:
 
 ## References
 
+Structured reference docs:
+
+- [SKILL.md Format](references/skill-format.md) — Frontmatter and format spec
+- [Authoring Workflow](references/authoring-workflow.md) — Step-by-step process
+- [Common Pitfalls](references/common-pitfalls.md) — Mistakes and fixes
+
+Related skills:
+
 - `hermes-skills/` — skill management
 - `hermes-master/` — routing
 - `hermes-concepts/` — architecture

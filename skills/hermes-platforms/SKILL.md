@@ -208,6 +208,14 @@ hermes config set gateway.remote https://server:18789
 
 ## References
 
+Structured reference docs:
+
+- [Service Config](references/service-config.md) — Systemd/LaunchD setup
+- [Cloud Deployment](references/cloud-deployment.md) — AWS, Railway, Fly.io
+- [Android Tuning](references/android-tuning.md) — Termux optimization
+
+Related skills:
+
 - `hermes-install/` — installation for all platforms
 - `hermes-gateway/` — deployment patterns
 - `hermes-config/` — performance tuning

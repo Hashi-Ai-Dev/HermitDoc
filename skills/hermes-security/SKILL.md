@@ -216,6 +216,14 @@ approvals:
 
 ## References
 
+Structured reference docs:
+
+- [Config Reference](references/config-reference.md) — Security config schema
+- [Secrets Redaction](references/secrets-redaction.md) — API key protection
+- [Best Practices](references/best-practices.md) — Security guidelines
+
+Related skills:
+
 - `hermes-config/` — security config keys
 - `hermes-cli/` — auth management
 - `hermes-troubleshooting/` — security issues
