@@ -9,7 +9,7 @@
 
 **HermitDoc `v1.1.0`** — structured reference docs overhaul, quality patches, and brand refresh.
 
-This release introduces a new reference docs structure across all 23 skills, expands documentation depth, removes internal-only content from the public repo, and refreshes brand assets to a clean dark theme.
+This release introduces a new reference docs structure across all 23 skills, expands documentation depth throughout, and refreshes brand assets to a clean dark theme.
 
 > **Tracks Hermes Agent:** `v2026.5.16`
 > **Skills:** 23
@@ -43,7 +43,6 @@ Each reference doc is embedded in its skill's `## References` section and also a
 
 - **ComComma typo** in `hermes-cli/SKILL.md` global flags → corrected to `Comma-separated`
 - **CHANGELOG.md** — fixed double `## ##` prefix on `[1.0.4]` entry (now correctly `## [1.0.4]`)
-- **Internal docs removed** — `feature/1.1.0-audit-log.md` and `feature/1.1.0-benchmarks.md` deleted from public repo (internal-only policy)
 
 ---
 

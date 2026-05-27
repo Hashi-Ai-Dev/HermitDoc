@@ -17,13 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 - README version badge updated: `v1.0.1` → `v1.1.0`
 - HERMITDOC_MANIFEST.json: `hermitdoc_version` `v1.0.4` → `v1.1.0`; `reference_docs` `300` → `30`
-- Brand assets regenerated: dark minimal theme, black background (#0a0a0a), platinum text (#c0c0c0), white accents — new OG banner `hermitdoc-og-v110.png` and square badge `hermitdoc-square-v110.png`
+- Brand assets refreshed: dark minimal theme, black background (#0a0a0a), platinum text (#c0c0c0), white accents
 
 ### Fixed
 
 - **ComComma typo** → `Comma` in `hermes-cli/SKILL.md` global flags line
 - **CHANGELOG.md** double `## ##` prefix on `[1.0.4]` entry corrected to single `##`
-- Internal docs removed: `feature/1.1.0-audit-log.md`, `feature/1.1.0-benchmarks.md` (public repo policy)
 
 ---
 
