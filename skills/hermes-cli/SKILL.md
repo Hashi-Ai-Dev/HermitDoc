@@ -349,6 +349,13 @@ hermes dashboard               Start the web dashboard
 
 ## References
 
+Structured reference docs:
+
+- [CLI Reference](references/cli-reference.md) — All commands with tables
+- [Slash Commands](references/slash-commands.md) — In-session `/` commands
+
+Related skills:
+
 - `hermes-config/` — config reference
 - `hermes-tools/` — tool reference
 - `hermes-gateway/` — gateway management

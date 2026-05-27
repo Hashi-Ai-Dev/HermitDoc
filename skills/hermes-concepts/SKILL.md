@@ -236,6 +236,14 @@ hermes profile use dev
 
 ## References
 
+Structured reference docs:
+
+- [Decision Flow](references/decision-flow.md) — Agent loop visualization
+- [Session Lifecycle](references/session-lifecycle.md) — Session management
+- [Context Assembly](references/context-assembly.md) — Context priority order
+
+Related skills:
+
 - `hermes-master/` — routing and overview
 - `hermes-config/` — config keys
 - `hermes-soul/` — persona system
